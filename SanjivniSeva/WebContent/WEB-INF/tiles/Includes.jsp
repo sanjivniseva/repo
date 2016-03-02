@@ -1,8 +1,8 @@
-<%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles" %>
+﻿<%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles" %>
 <!doctype html>
 <html lang="en">
   <head>
-	<meta charset="utf-8">
+	<meta charset="ISO-8859-1">
 	<title><tiles:insertAttribute name="title" ignore="true" /></title>
   </head>
   <body>
