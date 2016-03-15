@@ -27,7 +27,6 @@ public class IndexController extends AbstractController {
      * @see HttpServlet#HttpServlet()
      */
     public IndexController() {
-        super();
         // TODO Auto-generated constructor stub
     }
 
@@ -36,6 +35,7 @@ public class IndexController extends AbstractController {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		logger.debug(ApplicationConstants.METHOD_START);
+		request.getSession().setAttribute(ApplicationConstants.CURRENT_LANGUAGE_PROPERTY_FILE, ApplicationConstants.CONTENT_EN_FILE);
 		showView(request, response, "index.tiles");
 		logger.debug(ApplicationConstants.METHOD_END);
 	}
