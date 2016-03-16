@@ -27,10 +27,10 @@
 				<button type="submit" class="btn btn-success">Sign in</button>
 			</form>
 			<ul class="nav navbar-nav">
-				<li><a href="#" id="profile">Profile</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="ChangeLanguage">Change Language</a></li>
+				<li><a href="#" id="profile">Profile</a></li>
 				<li><a href="Logout">Logout</a></li>
 			</ul>
 		</div>

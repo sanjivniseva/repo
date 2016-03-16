@@ -35,11 +35,11 @@ public class LanguageController extends AbstractController {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		logger.debug(ApplicationConstants.METHOD_START);
-		System.err.println(request.getHeader("referer") + " - referer");
-		if(request.getSession().getAttribute(ApplicationConstants.CURRENT_LANGUAGE_PROPERTY_FILE).equals(ApplicationConstants.CONTENT_HI_FILE)) {
+//		System.err.println(request.getHeader("referer") + " - referer");
+		if(ApplicationConstants.CONTENT_HI_FILE.equals(request.getSession().getAttribute(ApplicationConstants.CURRENT_LANGUAGE_PROPERTY_FILE))) {
 			request.getSession().setAttribute(ApplicationConstants.CURRENT_LANGUAGE_PROPERTY_FILE, ApplicationConstants.CONTENT_EN_FILE);
 		}
-		else if(request.getSession().getAttribute(ApplicationConstants.CURRENT_LANGUAGE_PROPERTY_FILE).equals(ApplicationConstants.CONTENT_EN_FILE)) {
+		else if(ApplicationConstants.CONTENT_EN_FILE.equals(request.getSession().getAttribute(ApplicationConstants.CURRENT_LANGUAGE_PROPERTY_FILE))) {
 			request.getSession().setAttribute(ApplicationConstants.CURRENT_LANGUAGE_PROPERTY_FILE, ApplicationConstants.CONTENT_HI_FILE);
 		}
 		showView(request, response, "index.tiles");
