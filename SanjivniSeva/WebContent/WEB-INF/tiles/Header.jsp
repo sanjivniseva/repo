@@ -1,10 +1,10 @@
-<%@ page contentType="text/html; charset=ISO-8859-1" import="com.sanjivniseva.common.ApplicationConstants"%>
+﻿<%@ page contentType="text/html; charset=UTF-8" import="com.sanjivniseva.common.ApplicationConstants"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 
 <fmt:setBundle basename="${CurrentLanguagePropertyFile}" var="content_properties" />
 
 <nav class="navbar navbar-inverse" role="navigation">
-	<div class="container-fluid">
+	<div class="container">
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
