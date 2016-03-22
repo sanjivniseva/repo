@@ -1,4 +1,4 @@
-﻿<%@ page import="java.util.*" %>
+﻿﻿<%@ page import="java.util.*" %>
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://tiles.apache.org/tags-tiles-extras" prefix="tilesx" %>
@@ -26,8 +26,8 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <link href="/web-src/css/bootstrap.css" rel="stylesheet">
-    <link href="/web-src/css/bootstrap-theme.css" rel="stylesheet">
+    <link href="web-src/css/bootstrap.css" rel="stylesheet">
+    <link href="web-src/css/bootstrap-theme.css" rel="stylesheet">
   </head>
   <body>
 		  <tiles:insertAttribute name="header" ignore="true" />
@@ -44,7 +44,7 @@
     <!-- Latest compiled and minified JavaScript -->
     
 		<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> -->
-    <script src="/web-src/js/bootstrap.js"></script>
+    <script src="web-src/js/bootstrap.js"></script>
 
   </body>
 </html>

@@ -28,7 +28,7 @@ public abstract class AbstractController extends HttpServlet implements IControl
 
 	@Override
 	public void showView(HttpServletRequest request, HttpServletResponse response, String viewName) {
-		RequestDispatcher view = request.getRequestDispatcher(viewName);
+		RequestDispatcher view = getServletContext().getRequestDispatcher(viewName);
 		try {
 			view.forward(request, response);
 		} catch (ServletException e) {
