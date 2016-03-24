@@ -1,0 +1,14 @@
+.client-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.mar-t0{
+	margin-top: 0;
+}
+.mar-b0{
+	margin-bottom: 0;
+}
+.mar-t-18{
+	margin-top: -18px;
+}

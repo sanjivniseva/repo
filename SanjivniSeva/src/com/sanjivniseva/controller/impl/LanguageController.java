@@ -16,7 +16,7 @@ import com.sanjivniseva.controller.AbstractController;
 /**
  * Servlet implementation class LanguageController
  */
-@WebServlet("/ChangeLanguage")
+@WebServlet("/switch-language")
 public class LanguageController extends AbstractController {
 
 	private static final long serialVersionUID = 1L;
@@ -35,14 +35,13 @@ public class LanguageController extends AbstractController {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		logger.debug(ApplicationConstants.METHOD_START);
-//		System.err.println(request.getHeader("referer") + " - referer");
 		if(ApplicationConstants.CONTENT_HI_FILE.equals(request.getSession().getAttribute(ApplicationConstants.CURRENT_LANGUAGE_PROPERTY_FILE))) {
 			request.getSession().setAttribute(ApplicationConstants.CURRENT_LANGUAGE_PROPERTY_FILE, ApplicationConstants.CONTENT_EN_FILE);
 		}
 		else if(ApplicationConstants.CONTENT_EN_FILE.equals(request.getSession().getAttribute(ApplicationConstants.CURRENT_LANGUAGE_PROPERTY_FILE))) {
 			request.getSession().setAttribute(ApplicationConstants.CURRENT_LANGUAGE_PROPERTY_FILE, ApplicationConstants.CONTENT_HI_FILE);
 		}
-		showView(request, response, "index.tiles");
+		showView(request, response, "/index.tiles");
 		logger.debug(ApplicationConstants.METHOD_END);
 	}
 

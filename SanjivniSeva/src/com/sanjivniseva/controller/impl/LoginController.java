@@ -37,7 +37,7 @@ public class LoginController extends AbstractController {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     	logger.debug(ApplicationConstants.METHOD_START);
-		showView(request, response, "login.tiles");
+		showView(request, response, "/login.tiles");
 		logger.debug(ApplicationConstants.METHOD_END);
     }
 

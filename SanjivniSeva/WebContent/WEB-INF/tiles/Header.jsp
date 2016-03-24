@@ -24,12 +24,12 @@
 				<div class="form-group">
 					<input placeholder="Password" class="form-control" type="password">
 				</div>
-				<button type="submit" class="btn btn-success">Sign in</button>
+				<button type="submit" class="btn btn-warning">Sign in</button>
 			</form>
 			<ul class="nav navbar-nav">
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="ChangeLanguage">Change Language</a></li>
+				<li><a href="switch-language"><fmt:message key="_header.switch.language" bundle="${content_properties}" /></a></li>
 				<li><a href="#" id="profile">Profile</a></li>
 				<li><a href="Logout">Logout</a></li>
 			</ul>
@@ -38,3 +38,13 @@
 	</div>
 	<!-- /.container-fluid -->
 </nav>
+<p class="col-lg-3 col-md-3 col-sm-5 col-lg-offset-4 col-md-offset-4 col-sm-offset-3 mar-t-18 text-right client-color-warn">
+<small>
+	<fmt:message key="_header.register.text" bundle="${content_properties}" />
+	<a href="register">
+		<button type="submit" class="btn btn-warning btn-xs">
+			<fmt:message key="_header.register.button" bundle="${content_properties}" />
+		</button>
+	</a>
+</small>
+</p>

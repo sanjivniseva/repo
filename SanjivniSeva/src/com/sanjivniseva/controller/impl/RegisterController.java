@@ -16,7 +16,7 @@ import com.sanjivniseva.controller.AbstractController;
 /**
  * Servlet implementation class RegisterController
  */
-@WebServlet("/Register")
+@WebServlet("/register")
 public class RegisterController extends AbstractController {
 
 	private static final long serialVersionUID = 1L;
@@ -36,7 +36,7 @@ public class RegisterController extends AbstractController {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		logger.debug(ApplicationConstants.METHOD_START);
-		showView(request, response, "register.tiles");
+		showView(request, response, "/register.tiles");
 		logger.debug(ApplicationConstants.METHOD_END);
 	}
 
