@@ -16,30 +16,20 @@ import com.sanjivniseva.controller.AbstractController;
 /**
  * Servlet implementation class LoginController
  */
-@WebServlet(urlPatterns={"/sign-in-page", "/sign-in"})
-public class SigninController extends AbstractController {
+@WebServlet(urlPatterns={"/require-blood"})
+public class BloodRequirementController extends AbstractController {
 
 	private static final long serialVersionUID = 1L;
 
-	private static final Logger logger = Logger.getLogger(SigninController.class);
-       
+	private static final Logger logger = Logger.getLogger(BloodRequirementController.class);
+
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public SigninController() {
+    public BloodRequirementController() {
         super();
         // TODO Auto-generated constructor stub
     }
-
-    /**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
-	@Override
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		logger.debug(ApplicationConstants.METHOD_START);
-		showView(request, response, "/signin.tiles");
-		logger.debug(ApplicationConstants.METHOD_END);
-	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse

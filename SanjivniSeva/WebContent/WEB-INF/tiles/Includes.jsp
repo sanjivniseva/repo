@@ -1,6 +1,5 @@
 ﻿<%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ taglib uri="http://tiles.apache.org/tags-tiles-extras" prefix="tilesx" %>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -23,30 +22,47 @@
     <![endif]-->
     <link rel="stylesheet" href="web-src/css/bootstrap.css">
     <link rel="stylesheet" href="web-src/css/bootstrap-theme.css">
-    
+
+		<link rel="stylesheet" href="web-src/jquery/jquery-ui.css">
+
 		<!-- MDL -->
 		<link rel="stylesheet" href="web-src/mdl/material.min.css">
-		<script src="web-src/mdl/material.min.js"></script>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+
     <!-- Customized -->
     <link rel="stylesheet" href="web-src/css/common.css">
     <link rel="stylesheet" href="web-src/css/colors.css">
   </head>
   <body>
-		  <tiles:insertAttribute name="header" ignore="true" />
 
-		  <tiles:insertAttribute name="menu" ignore="true" />
-
-		  <tiles:insertAttribute name="body" ignore="true" />
-
-		  <tiles:insertAttribute name="footer" ignore="true" />
+		<tiles:insertAttribute name="header" ignore="true" />
+	
+		<tiles:insertAttribute name="menu" ignore="true" />
+	
+		<tiles:insertAttribute name="body" ignore="true" />
+	
+		<tiles:insertAttribute name="footer" ignore="true" />
 
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+    <script src="web-src/jquery/jquery.min.js"></script>
+		<script src="web-src/jquery/jquery-ui.js"></script>
+		<script>
+			$(function() {
+				$(".datepicker").datepicker({
+					dateFormat: "dd/mm/yy",
+					yearRange: '1950:2006',
+					changeMonth: true,
+			    changeYear: true
+				});
+			});
+		</script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- Latest compiled and minified JavaScript -->
 		<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> -->
+    <script src="web-src/mdl/material.min.js"></script>
     <script src="web-src/js/bootstrap.js"></script>
 
-  </body>
+	</body>
 </html>

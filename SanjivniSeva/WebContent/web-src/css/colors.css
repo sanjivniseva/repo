@@ -1,32 +1,7 @@
-.client-color-warn {
-	color: rgba(0,0,55,1);
-}
 /* **** header starts **** */
-.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a {
-  color: #e38d13;
-}
 .navbar-inverse {
-	background: rgba(0,0,55,1);
+	background: rgba(0,0,0,1);
+	border: none;
 }
-.navbar-collapse input.form-control {
-	color: #e38d13;
-}
-/* **** header ends **** */
 
-/* placeholder starts */
-input.form-control::-webkit-input-placeholder {
-	color: #e38d13;
-}
-input.form-control:-moz-placeholder { /* Firefox 18- */
-	color: #e38d13;
-}
-input.form-control::-moz-placeholder { /* Firefox 19+ */
-	color: #e38d13;
-}
-input.form-control:-ms-input-placeholder {
-	color: #e38d13;
-}
-input.form-control:placeholder-shown { /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
-	color: #e38d13;
-}
-/* placeholder ends */
+/* **** header ends **** */

@@ -1,3 +1,6 @@
+/**
+ * 
+ */
 package com.sanjivniseva.controller.impl;
 
 import java.io.IOException;
@@ -14,31 +17,30 @@ import com.sanjivniseva.common.ApplicationConstants;
 import com.sanjivniseva.controller.AbstractController;
 
 /**
- * Servlet implementation class HomeController
+ * @author jagdeep
+ *
  */
-@WebServlet(urlPatterns={""})
-public class IndexController extends AbstractController {
+@WebServlet("/logout")
+public class LogoutController extends AbstractController {
 
 	private static final long serialVersionUID = 1L;
 
-	private static final Logger logger = Logger.getLogger(IndexController.class);
+	private static final Logger logger = Logger.getLogger(LogoutController.class);
 
-    /**
+	/**
      * @see HttpServlet#HttpServlet()
      */
-    public IndexController() {
-        // TODO Auto-generated constructor stub
-    }
+	public LogoutController() {
+		// TODO Auto-generated constructor stub
+	}
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
-    @Override
+	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		logger.debug(ApplicationConstants.METHOD_START);
-		request.getSession().setAttribute(ApplicationConstants.CURRENT_LANGUAGE_PROPERTY_FILE, ApplicationConstants.CONTENT_EN_FILE);
 		showView(request, response, "/index.tiles");
-		logger.debug(ApplicationConstants.METHOD_END);
+		logger.debug(ApplicationConstants.METHOD_START);
 	}
-
 }

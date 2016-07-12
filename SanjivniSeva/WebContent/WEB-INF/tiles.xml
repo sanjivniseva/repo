@@ -29,15 +29,23 @@
 		<put-attribute name="body" value="/WEB-INF/views/MenuTestPageBody.jsp" />
   </definition>
   <definition name="index" extends="no-menu-layout">
-		<put-attribute name="title" value="Sanjivni Seva" />
+		<put-attribute name="title" value="Sanjivni Seva - Welcome" />
 		<put-attribute name="body" value="/WEB-INF/views/Index.jsp" />
   </definition>
-  <definition name="login" extends="no-menu-layout">
-		<put-attribute name="title" value="Login" />
-		<put-attribute name="body" value="/WEB-INF/views/Login.jsp" />
+  <definition name="signin" extends="no-menu-layout">
+		<put-attribute name="title" value="Sanjivni Seva - Sign in" />
+		<put-attribute name="body" value="/WEB-INF/views/Signin.jsp" />
   </definition>
   <definition name="register" extends="no-menu-layout">
-		<put-attribute name="title" value="Register" />
+		<put-attribute name="title" value="Sanjivni Seva - Register" />
 		<put-attribute name="body" value="/WEB-INF/views/Register.jsp" />
+  </definition>
+  <definition name="profile" extends="no-menu-layout">
+		<put-attribute name="title" value="Sanjivni Seva - Profile" />
+		<put-attribute name="body" value="/WEB-INF/views/Profile.jsp" />
+  </definition>
+  <definition name="settings" extends="no-menu-layout">
+		<put-attribute name="title" value="Sanjivni Seva - Settings" />
+		<put-attribute name="body" value="/WEB-INF/views/Settings.jsp" />
   </definition>
 </tiles-definitions>

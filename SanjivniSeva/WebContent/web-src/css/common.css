@@ -1,14 +1,58 @@
-.client-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
+/***	defining margin top and bottom***/
 .mar-t0{
 	margin-top: 0;
 }
 .mar-b0{
 	margin-bottom: 0;
 }
-.mar-t-18{
-	margin-top: -18px;
+.mar-t-26{
+	margin-top: -26px;
+}
+.mar-t20{
+	margin-top: 20px;
+}
+.mar-b20{
+	margin-bottom: 20px;
+}
+.mar-b90 {
+	margin-bottom: 90px;
+}
+/***	fix width ***/
+.fixed-width-83 {
+	width: 83px;
+}
+.fixed-width-130 {
+	width: 130px;
+}
+.fixed-width-300 {
+	width: 300px;
+}
+
+/*** fixed height ***/
+.fixed-height-445 {
+	height: 445px;
+}
+.fixed-height-340 {
+	height: 340px;
+}
+
+/***	a little styling for select element***/
+select {
+	padding: 5px;
+	border-style: double;
+	border-radius: 3px;
+	height: 34px;
+}
+
+/* .carousel-inner > .item > img {
+	height: 445px;
+}
+.carousel-inner > .item > .sliding-content {
+	height: 445px;
+} */
+
+.horizontal-line {
+	border-bottom: 1px solid #ddd;
+	margin-top: 15px;
+	margin-bottom: 15px;
 }

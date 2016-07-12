@@ -1,3 +1,6 @@
+/**
+ * 
+ */
 package com.sanjivniseva.controller.impl;
 
 import java.io.IOException;
@@ -13,43 +16,31 @@ import org.apache.log4j.Logger;
 import com.sanjivniseva.common.ApplicationConstants;
 import com.sanjivniseva.controller.AbstractController;
 
-
 /**
- * Servlet implementation class RegisterController
+ * @author jagdeep
+ *
  */
-@WebServlet(urlPatterns={"/register-page", "/register"})
-public class RegisterController extends AbstractController {
+@WebServlet("/profile")
+public class ProfileController extends AbstractController {
 
 	private static final long serialVersionUID = 1L;
 
-	private static final Logger logger = Logger.getLogger(RegisterController.class);
+	private static final Logger logger = Logger.getLogger(ProfileController.class);
 
 	/**
      * @see HttpServlet#HttpServlet()
      */
-    public RegisterController() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
+	public ProfileController() {
+		// TODO Auto-generated constructor stub
+	}
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
-    @Override
+	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		logger.debug(ApplicationConstants.METHOD_START);
-		showView(request, response, "/register.tiles");
-		logger.debug(ApplicationConstants.METHOD_END);
-	}
-
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
-	@Override
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		showView(request, response, "/profile.tiles");
 		logger.debug(ApplicationConstants.METHOD_START);
-//		System.err.println(request.getHeader("referer") + " - referer");
-		showView(request, response, "/index.tiles");
-		logger.debug(ApplicationConstants.METHOD_END);
 	}
 }
